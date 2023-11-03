@@ -1,0 +1,47 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1699043855",
+        "python_version": "3.7.12 | packaged by conda-forge | (default, Oct 26 2021, 05:35:01) [MSC v.1916 64 bit (AMD64)]",
+        "command_line_arguments": "C:\\Users\\surfe\\miniconda3\\envs\\unity\\Scripts\\mlagents-learn --force",
+        "mlagents_version": "0.28.0",
+        "mlagents_envs_version": "0.28.0",
+        "communication_protocol_version": "1.5.0",
+        "pytorch_version": "1.7.1+cu110",
+        "numpy_version": "1.21.6",
+        "end_time_seconds": "1699043876"
+    },
+    "total": 20.2655743,
+    "count": 1,
+    "self": 0.028034599999998022,
+    "children": {
+        "run_training.setup": {
+            "total": 0.1887072999999999,
+            "count": 1,
+            "self": 0.1887072999999999
+        },
+        "TrainerController.start_learning": {
+            "total": 20.048832400000002,
+            "count": 1,
+            "self": 0.0035306000000012716,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 20.0452093,
+                    "count": 1,
+                    "self": 20.0452093
+                },
+                "trainer_threads": {
+                    "total": 1.4100000001349144e-05,
+                    "count": 1,
+                    "self": 1.4100000001349144e-05
+                },
+                "TrainerController._save_models": {
+                    "total": 7.839999999958991e-05,
+                    "count": 1,
+                    "self": 7.839999999958991e-05
+                }
+            }
+        }
+    }
+}
