@@ -1,18 +1,27 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class ballController : MonoBehaviour
+public class BallController : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public GameObject area;
+    [HideInInspector]
+    public SoccerEnvController envController;
+    public string redGoalTag; //will be used to check if collided with red goal
+    public string blueGoalTag; //will be used to check if collided with blue goal
+
     void Start()
     {
-        
+        envController = area.GetComponent<SoccerEnvController>();
     }
 
-    // Update is called once per frame
-    void Update()
+    void OnCollisionEnter(Collision col)
     {
-        
+        if (col.gameObject.CompareTag(redGoalTag)) //ball touched red goal
+        {
+            envController.GoalTouched(Team.Blue);
+        }
+        if (col.gameObject.CompareTag(blueGoalTag)) //ball touched blue goal
+        {
+            envController.GoalTouched(Team.Red);
+        }
     }
 }
