@@ -1,0 +1,54 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1699126643",
+        "python_version": "3.9.0 (default, Nov 15 2020, 08:30:55) [MSC v.1916 64 bit (AMD64)]",
+        "command_line_arguments": "C:\\Users\\animu\\anaconda3\\envs\\RL\\Scripts\\mlagents-learn --resume ./configs/poca/SoccerTwos.yaml --run-id=SoccerTwos",
+        "mlagents_version": "0.30.0",
+        "mlagents_envs_version": "0.30.0",
+        "communication_protocol_version": "1.5.0",
+        "pytorch_version": "2.1.0+cpu",
+        "numpy_version": "1.21.2",
+        "end_time_seconds": "1699126654"
+    },
+    "total": 10.4126196,
+    "count": 1,
+    "self": 0.007243499999997738,
+    "children": {
+        "run_training.setup": {
+            "total": 0.0950116999999997,
+            "count": 1,
+            "self": 0.0950116999999997
+        },
+        "TrainerController.start_learning": {
+            "total": 10.310364400000001,
+            "count": 1,
+            "self": 0.00010550000000186799,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 10.108812799999999,
+                    "count": 1,
+                    "self": 10.108812799999999
+                },
+                "trainer_threads": {
+                    "total": 8.000000004670937e-07,
+                    "count": 1,
+                    "self": 8.000000004670937e-07
+                },
+                "TrainerController._save_models": {
+                    "total": 0.2014452999999996,
+                    "count": 1,
+                    "self": 0.006339199999999323,
+                    "children": {
+                        "RLTrainer._checkpoint": {
+                            "total": 0.19510610000000028,
+                            "count": 1,
+                            "self": 0.19510610000000028
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
