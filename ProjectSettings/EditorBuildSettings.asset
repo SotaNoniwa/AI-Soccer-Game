@@ -8,7 +8,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SoccerTwo.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/training.unity
     guid: 4884c42b544c06c4db732e5583b65b03
+  - enabled: 1
+    path: Assets/Scenes/inference.unity
+    guid: 22f5c3084e448814386276f43ead3f68
   m_configObjects: {}

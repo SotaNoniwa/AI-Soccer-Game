@@ -1,7 +1,7 @@
 Mono path[0] = 'C:/Users/animu/soccerRL/env/soccerAI_Data/Managed'
 Mono config path = 'C:/Users/animu/soccerRL/env/MonoBleedingEdge/etc'
-Found 2 interfaces on host : 0) 172.17.64.1 1) 192.168.1.180
-Multi-casting "[IP] 172.17.64.1 [Port] 55000 [Flags] 2 [Guid] 349724821 [EditorId] 831291294 [Version] 1048832 [Id] WindowsPlayer(2,miranjo) [Debug] 0 [PackageName] WindowsPlayer [ProjectName] soccerAI" to [225.0.0.222:54997]...
+Found 1 interfaces on host : 0) 192.168.1.180
+Multi-casting "[IP] 192.168.1.180 [Port] 55000 [Flags] 2 [Guid] 2297202294 [EditorId] 831291294 [Version] 1048832 [Id] WindowsPlayer(2,miranjo) [Debug] 0 [PackageName] WindowsPlayer [ProjectName] soccerAI" to [225.0.0.222:54997]...
 [Physics::Module] Initialized MultithreadedJobDispatcher with 11 workers.
 Initialize engine version: 2022.3.10f1 (ff3792e53c62)
 [Subsystems] Discovering subsystems at path C:/Users/animu/soccerRL/env/soccerAI_Data/UnitySubsystems
@@ -12,8 +12,8 @@ NullGfxDevice:
     Renderer: Null Device
     Vendor:   Unity Technologies
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.173 seconds
-- Finished resetting the current domain, in  0.002 seconds
+- Loaded All Assemblies, in  2.050 seconds
+- Finished resetting the current domain, in  0.001 seconds
 ERROR: Shader Sprites/Default shader is not supported on this GPU (none of subshaders/fallbacks are suitable)
 Microsoft Media Foundation video decoding to texture disabled: graphics device is Null, only Direct3D 11 and Direct3D 12 (only on desktop) are supported for hardware-accelerated video decoding.
 ERROR: Shader Sprites/Mask shader is not supported on this GPU (none of subshaders/fallbacks are suitable)
@@ -25,13 +25,13 @@ ERROR: Shader Standard shader is not supported on this GPU (none of subshaders/f
 WARNING: Shader Unsupported: 'Standard' - All subshaders removed
 WARNING: Shader Did you use #pragma only_renderers and omit this platform?
 WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-UnloadTime: 0.507300 ms
+UnloadTime: 0.522700 ms
 Setting up 6 worker threads for Enlighten.
 PlayerConnection::CleanupMemory Statistics:
 [ALLOC_TEMP_TLS] TLS Allocator
   StackAllocators : 
     [ALLOC_TEMP_MAIN]
-      Peak usage frame count: [8.0 KB-16.0 KB]: 21352 frames, [2.0 MB-4.0 MB]: 1 frames
+      Peak usage frame count: [8.0 KB-16.0 KB]: 12484 frames, [2.0 MB-4.0 MB]: 1 frames
       Initial Block Size 4.0 MB
       Current Block Size 4.0 MB
       Peak Allocated Bytes 2.1 MB
@@ -217,7 +217,7 @@ PlayerConnection::CleanupMemory Statistics:
       Peak Allocated Bytes 219 B
       Overflow Count 0
 [ALLOC_MEMORYPROFILER]
-  Peak usage frame count: [128.0 KB-256.0 KB]: 21353 frames
+  Peak usage frame count: [128.0 KB-256.0 KB]: 12485 frames
   Requested Block Size 1.0 MB
   Peak Block count 1
   Peak Allocated memory 251.2 KB
@@ -229,13 +229,13 @@ PlayerConnection::CleanupMemory Statistics:
       Used Block count 1
       Peak Allocated bytes 1.1 MB
     [ALLOC_DEFAULT_MAIN]
-      Peak usage frame count: [16.0 MB-32.0 MB]: 21353 frames
+      Peak usage frame count: [16.0 MB-32.0 MB]: 12485 frames
       Requested Block Size 16.0 MB
       Peak Block count 1
       Peak Allocated memory 31.1 MB
       Peak Large allocation bytes 16.0 MB
     [ALLOC_DEFAULT_THREAD]
-      Peak usage frame count: [4.0 MB-8.0 MB]: 21353 frames
+      Peak usage frame count: [4.0 MB-8.0 MB]: 12485 frames
       Requested Block Size 16.0 MB
       Peak Block count 1
       Peak Allocated memory 5.6 MB
@@ -267,13 +267,13 @@ PlayerConnection::CleanupMemory Statistics:
       Used Block count 1
       Peak Allocated bytes 1.1 MB
     [ALLOC_GFX_MAIN]
-      Peak usage frame count: [32.0 KB-64.0 KB]: 21352 frames, [64.0 KB-128.0 KB]: 1 frames
+      Peak usage frame count: [32.0 KB-64.0 KB]: 12484 frames, [64.0 KB-128.0 KB]: 1 frames
       Requested Block Size 16.0 MB
       Peak Block count 1
       Peak Allocated memory 67.4 KB
       Peak Large allocation bytes 0 B
     [ALLOC_GFX_THREAD]
-      Peak usage frame count: [16.0 KB-32.0 KB]: 21353 frames
+      Peak usage frame count: [16.0 KB-32.0 KB]: 12485 frames
       Requested Block Size 16.0 MB
       Peak Block count 1
       Peak Allocated memory 21.8 KB
@@ -285,13 +285,13 @@ PlayerConnection::CleanupMemory Statistics:
       Used Block count 1
       Peak Allocated bytes 1.1 MB
     [ALLOC_CACHEOBJECTS_MAIN]
-      Peak usage frame count: [1.0 MB-2.0 MB]: 21353 frames
+      Peak usage frame count: [1.0 MB-2.0 MB]: 12485 frames
       Requested Block Size 4.0 MB
       Peak Block count 1
       Peak Allocated memory 1.5 MB
       Peak Large allocation bytes 0 B
     [ALLOC_CACHEOBJECTS_THREAD]
-      Peak usage frame count: [0.5 MB-1.0 MB]: 21352 frames, [1.0 MB-2.0 MB]: 1 frames
+      Peak usage frame count: [0.5 MB-1.0 MB]: 12484 frames, [1.0 MB-2.0 MB]: 1 frames
       Requested Block Size 4.0 MB
       Peak Block count 1
       Peak Allocated memory 2.0 MB
@@ -303,19 +303,19 @@ PlayerConnection::CleanupMemory Statistics:
       Used Block count 1
       Peak Allocated bytes 1.1 MB
     [ALLOC_TYPETREE_MAIN]
-      Peak usage frame count: [4.0 KB-8.0 KB]: 21353 frames
+      Peak usage frame count: [4.0 KB-8.0 KB]: 12485 frames
       Requested Block Size 2.0 MB
       Peak Block count 1
       Peak Allocated memory 4.2 KB
       Peak Large allocation bytes 0 B
     [ALLOC_TYPETREE_THREAD]
-      Peak usage frame count: [0-1.0 KB]: 21352 frames, [1.0 KB-2.0 KB]: 1 frames
+      Peak usage frame count: [0-1.0 KB]: 12484 frames, [1.0 KB-2.0 KB]: 1 frames
       Requested Block Size 2.0 MB
       Peak Block count 1
       Peak Allocated memory 1.2 KB
       Peak Large allocation bytes 0 B
 [ALLOC_PROFILER]
-  Peak usage frame count: [256.0 KB-0.5 MB]: 21352 frames, [32.0 MB-64.0 MB]: 1 frames
+  Peak usage frame count: [256.0 KB-0.5 MB]: 12484 frames, [32.0 MB-64.0 MB]: 1 frames
   Requested Block Size 16.0 MB
   Peak Block count 3
   Peak Allocated memory 33.3 MB
@@ -324,4 +324,4 @@ PlayerConnection::CleanupMemory Statistics:
       Large Block size 4.0 MB
       Used Block count 1
       Peak Allocated bytes 66.0 KB
-##utp:{"type":"MemoryLeaks","version":2,"phase":"Immediate","time":1699224900119,"processId":17144,"allocatedMemory":277132,"memoryLabels":[{"Default":-128},{"Manager":9320},{"Shader":368},{"GfxDevice":72},{"Serialization":52},{"String":112},{"HashMap":1536},{"Utility":263768},{"PoolAlloc":112},{"VR":1696},{"Subsystems":96},{"CoreBusinessMetrics":128}]}
+##utp:{"type":"MemoryLeaks","version":2,"phase":"Immediate","time":1699288152298,"processId":13440,"allocatedMemory":277132,"memoryLabels":[{"Default":-128},{"Manager":9320},{"Shader":368},{"GfxDevice":72},{"Serialization":52},{"String":112},{"HashMap":1536},{"Utility":263768},{"PoolAlloc":112},{"VR":1696},{"Subsystems":96},{"CoreBusinessMetrics":128}]}
