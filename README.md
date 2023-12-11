@@ -7,6 +7,14 @@
 ## 🎮 Try to beat the agents!
 Try to beat agents! You can download [player_demo.zip](player_demo.zip) file and run soccerAI.exe
 
+Keyboard Operations:
+- Q: Move left
+- W: Move forwards
+- E: Move right
+- A: Turn left
+- S: Move backwards
+- D: Turn right
+
 ## 🦾 Technologies
 - Unity
 - ML-Agents
